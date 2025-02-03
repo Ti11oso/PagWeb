@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <th>
+            <td>ID</td>
+            <td>NOMBRE</td>
+            <td>SECCION</td>
+            <td>PRECIO</td>
+        </th>
+        {%for articulo in articulos%}
+
+    <tr>
+        <td>{{articulo.id}}</td>
+        <td>{{articulo.nombre}}</td>
+        <td>{{articulo.seccion}}</td>
+        <td>{{articulo.precio}}</td>
+    </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>

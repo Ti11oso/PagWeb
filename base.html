@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fronts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..10008display=swap" rel="stylesheet">
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <style>
+       body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8CRTAOz6VQ6UFf2W1uHc0LAbXKZTo7JDCuQ&s'); /* Reemplaza con tu URL */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura al 100% de la pantalla */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+        h1{
+            text-align: center;
+        }
+    </style>
+    {% include 'navbar.html' %}
+    <h1>Bienvenidos a RideSphere</h1>
+    {% block content %}{% endblock content %}
+</body>
+</html. 
